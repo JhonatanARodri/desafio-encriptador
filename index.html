@@ -18,22 +18,22 @@
     <main class="presentacion"> 
 
         <section class="presentacion__entrada">
-            <p class="presentacion__entrada__texto"> Desafio encriptador</p>
-            <textarea class="presentacion__entrada__cuadrotexto" name="ingreso__texto" placeholder="Ingrese el texto aqui" rows="10" cols="50" ></textarea>
+            <p class="presentacion__entrada__texto">Encriptador y desencriptador de texto</p>
+            <textarea class="presentacion__entrada__cuadrotexto" type="text" id="ingreso__texto" placeholder="Ingrese el texto aqui" rows="10" cols="50" ></textarea>
             <p class="presentacion__entrada__advertencia"> Solo letras minusculas y sin acentos</p>
             <div class="presentacion__entrada__cajabotones">
-                <button class="presentacion__entrada__cajabotones__boton" id="encriptar" href="https://www.instagram.com/">
+                <button class="presentacion__entrada__cajabotones__boton" id="encriptar" onclick="encriptar ();">
                     Encriptar</button>
-                <button class="presentacion__entrada__cajabotones__boton" id="desencriptar" href="https://github.com/">
+                <button class="presentacion__entrada__cajabotones__boton" id="desencriptar" onclick="desencriptar();">
                     Desencriptar</button>
             </div>
 
         </section>
 
         <section class="presentacion__salida">
-            <img class="presentacion__salida_imagen" src="./assets/Muñeco.svg" alt="Personas buscando texto para desencriptar">
-            <p class="presentacion__salida__texto"> Ningún texto fue encontrado</p>
-            <p class="presentacion__salida__texto"> Ingrese el texto que desea encriptar o desencriptar</p>
+            <img class="presentacion__salida_imagen" id="imagen__salida" src="./assets/Muñeco.svg" alt="Personas buscando texto para desencriptar">
+            <p class="presentacion__salida__texto" id="texto__salida1"> Ningún texto fue encontrado</p>
+            <p class="presentacion__salida__texto" id="texto__salida2"> Ingrese el texto que desea encriptar o desencriptar</p>
             
 
         </section>
@@ -43,6 +43,8 @@
     <footer class="footer">
         <p> Desarrollado por Jhonatan Archila</p>
     </footer>
+
+    <script src="app.js" defer></script>
 
 </body>
 </html>

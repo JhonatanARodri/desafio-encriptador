@@ -60,6 +60,7 @@ body {
     font-family: var(--fuente-ubuntu);
     font-weight: 400;
     font-size: 2.25rem;
+    overflow: hidden;
 }
 
 .presentacion__entrada__cuadrotexto{
